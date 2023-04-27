@@ -19,5 +19,4 @@ INSERT INTO product(title, price, rating, category, brand) VALUES('MacBook','950
 
 SELECT category, COUNT(title) FROM product GROUP BY category;
 SELECT COUNT(DISTINCT brand) FROM product;
-SELECT title, price FROM product ORDER BY category;
 SELECT category, title, price FROM customer JOIN product ON customer.productID=product.id ORDER BY category, price DESC;
